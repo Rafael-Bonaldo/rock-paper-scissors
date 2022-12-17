@@ -4,46 +4,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="./js/tailwind.config.js"></script>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="app.js" defer></script>
   <title>Frontend Mentor | Rock, Paper, Scissors</title>
 </head>
 
 <body>
   <div class="container">
-    <div class="score">
-      <div class="score-list">
-        <ul>
-          <li>rock</li>
-          <li>papper</li>
-          <li>scissors</li>
-        </ul>
+    <header class="header">
+      <img src="./images/logo.svg" alt="logo" class="logo">
+      <div class="score">
+        <div class="score__title">score</div>
+        <div class="score__number">12</div>
       </div>
-      <div class="score-result">
-        <span class="score-result--title">score</span>
-        <span class="score-result--numero">12</span>
-      </div>
-    </div>
-    <div class="carrousel centered">
-      <img class="triangle-image" src="./images/bg-triangle.svg" alt="triangle connect">
-      <div class="carrousel-items">
-        <div class="carrousel-item circle left">
-          <img class="icon" src="./images/icon-paper.svg" alt="paper logo">
+    </header>
+    <section class="game">
+      <button class="choice-btn" data-choice="paper">
+        <div class="choice paper">
+          <img src="./images/icon-paper.svg" alt="Paper">
         </div>
-        <div class="carrousel-item circle right">
-          <img class="icon" src="./images/icon-scissors.svg" alt="scissor logo">
+      </button>
+      <button class="choice-btn" data-choice="scissors">
+        <div class="choice scissors">
+          <img src="./images/icon-scissors.svg" alt="Scissors">
         </div>
-        <div class="carrousel-item circle bottom">
-          <img class="icon" src="./images/icon-rock.svg" alt="rock logo">
+      </button>
+      <button class="choice-btn" data-choice="rock">
+        <div class="choice rock">
+          <img src="./images/icon-rock.svg" alt="Rock">
         </div>
-      </div>
-    </div>
+      </button>
+    </section>
   </div>
+
+  <button class="rules-btn" tabindex="1">rules</button>
+  <div class="modal"></div>
+  <footer class="footer">
+    <div class="attribution">
+      Challenge by
+      <a href="http://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
+      Coded by <a href="#">Rafael Bonaldo</a>
+    </div>
+  </footer>
 </body>
 
 </html>
