@@ -31,6 +31,8 @@ body {
   background: radial-gradient(at top, var(--bg-grad-1), var(--bg-grad-2));
   min-height: 100vh;
   text-transform: uppercase;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 .container {
@@ -142,7 +144,7 @@ body {
 
 .choice-btn:focus .choice::after {
   opacity: 1;
-  box-shadow: 0 0 0 2rem #223351;
+  box-shadow: 0 0 0 1rem #2c3d5b, 0 0 0 2rem #293a58, 0 0 0 4rem #233656;
   z-index: -2;
 }
 
@@ -215,11 +217,37 @@ body {
 }
 
 /* tablet */
+@media (min-width: 400px) {
+  .game::before {
+    transform: scale(0.8);
+    left: 4%;
+    top: 12%;
+  }
+
+  .rules-btn {
+    right: 8rem;
+  }
+}
+
 @media (min-width: 640px) {
+  .game::before {
+    transform: scale(0.8);
+    left: 20%;
+    top: 12%;
+  }
 }
 
 /* laptop */
 @media (min-width: 1024px) {
+  .game::before {
+    transform: scale(0.8);
+    left: 20%;
+    top: 12%;
+  }
+
+  .choice-btn:focus .choice::after {
+    box-shadow: 0 0 0 1.5rem #2c3d5b, 0 0 0 3.5rem #293a58, 0 0 0 5.5rem #233656;
+  }
 }
 
 /* desktop */
@@ -228,6 +256,10 @@ body {
     border-radius: 20px;
     height: 150px;
     padding: 1rem 1.4rem 1rem 2rem;
+  }
+
+  .header img {
+    width: inherit;
   }
 
   .container {
@@ -255,6 +287,10 @@ body {
 
   .choice img {
     transform: scale(1.5);
+  }
+
+  .choice-btn:focus .choice::after {
+    box-shadow: 0 0 0 1.5rem #2c3d5b, 0 0 0 4rem #293a58, 0 0 0 6rem #233656;
   }
 
   .game {
