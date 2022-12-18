@@ -252,6 +252,10 @@ body {
 
 /* desktop */
 @media (min-width: 1280px) {
+  .container {
+    padding-bottom: 2rem;
+  }
+
   .header {
     border-radius: 20px;
     height: 150px;
