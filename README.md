@@ -8,7 +8,7 @@ Esta é uma solução para o desafio do Rock, Paper, Scissors game no Frontend M
 
 ### Demo - Live
 
-<a href="https://rafael-bonaldo.github.io/rock-paper-scissors/">view Qr code component solution</a>
+<a href="https://rafael-bonaldo.github.io/rock-paper-scissors/">view Rock, Paper, Scissors game</a>
 
 ### Built with
 
